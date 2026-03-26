@@ -9,6 +9,7 @@ history_file="file://${orion_path}/${profile_id}/history"
 query="${1}"
 query="${query//\%/\\%}"
 query="${query//_/\_}"
+query="${query//'/''}"
 titleQuery="%${query// /%' ESCAPE '\\' AND TITLE LIKE '%}%"
 urlQuery="%${query// /%' ESCAPE '\\' AND URL LIKE '%}%"
 
