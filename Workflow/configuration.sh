@@ -17,12 +17,13 @@ cat << EOB
 	{
 		"title": "Open Current Profile in Finder",
 		"subtitle": "${defaultProfileSubtext}",
-		"arg": "${defaultProfileArg}",
+		"arg": "file://${defaultProfileArg}",
 		"variables": { "pref_id": "profilePath" }
 	},
 	{
 	    "title": "Configure Workflow...",
 		"subtitle": "Open the configuration window for ${alfred_workflow_name}",
+		"arg": "alfredpreferences://navigateto/workflows>workflow>${alfred_workflow_uid}>userconfig",
 		"variables": { "pref_id": "configure" }
 	},
 ]}
