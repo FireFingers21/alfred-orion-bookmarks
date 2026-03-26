@@ -964,10 +964,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 						<string></string>
 					</array>
 					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
-					</array>
-					<array>
 						<string>Chromium</string>
 						<string>org.chromium.Chromium</string>
 					</array>
@@ -1020,10 +1016,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 					<array>
 						<string>&lt;None&gt;</string>
 						<string></string>
-					</array>
-					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
 						<string>Chromium</string>
