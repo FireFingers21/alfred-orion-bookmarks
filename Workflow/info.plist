@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7C6B748D-6523-42EE-898A-B884F3E96C68</string>
+				<string>B378BB26-859C-44DF-90ED-4D733F5269F2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -44,11 +44,11 @@
 				<true/>
 			</dict>
 		</array>
-		<key>1FB2E22F-B861-47C6-8DD1-B93F06E7F8FB</key>
+		<key>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>511BB493-0F7A-4668-9A13-2A3974FAFFCC</string>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -57,13 +57,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
-		<array/>
+		<key>1FB2E22F-B861-47C6-8DD1-B93F06E7F8FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>462F7DCB-5C03-4FD3-9B17-676BEB441EEF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7C6B748D-6523-42EE-898A-B884F3E96C68</string>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -89,7 +100,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -115,7 +126,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>511BB493-0F7A-4668-9A13-2A3974FAFFCC</string>
+				<string>EA2C746D-114A-466A-886C-DF05F41E3E93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -134,11 +145,24 @@
 				<true/>
 			</dict>
 		</array>
+		<key>B378BB26-859C-44DF-90ED-4D733F5269F2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D0EB740F-5590-4BEA-AD30-5FC6944D1D8F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
+				<string>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -155,6 +179,19 @@
 				<string>⇧⌘↩ Open in primary browser without closing Alfred</string>
 				<key>vitoclose</key>
 				<true/>
+			</dict>
+		</array>
+		<key>EA2C746D-114A-466A-886C-DF05F41E3E93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>FCE86F39-10F4-4CA8-A543-F4EB4AB21897</key>
@@ -181,33 +218,6 @@
 	<string>Orion Bookmarks</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Secondary browser selection
-[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
-
-# Primary browser selection
-[[ -z "${browser}" ]] &amp;&amp; open "${1}" || open -b "${browser}" "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -260,6 +270,14 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>action</key>
@@ -295,6 +313,47 @@
 			<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Open downloaded webarchives for Reading List if available
+if [[ "${searchType}" == "reading" ]]; then
+	# Get Selected Orion Profile
+	orion_path="${HOME}/Library/Application Support/Orion"
+	profile_id="$(plutil -convert json "${orion_path}/profiles" -o - | jq -r --arg useSelectProfile "${useSelectProfile}" '(.profiles[] | select(.name == 	$useSelectProfile).identifier) // .defaultProfile // "Defaults"')"
+	webarchive_file="${orion_path}/${profile_id}/ReadingListArchives/${id}/Page.webarchive"
+
+	# Offline article detection
+	[[ -f "${webarchive_file}" ]] &amp;&amp; 1="file://${webarchive_file}"
+fi
+
+# Specify system default browser to handle opening files
+default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist" -o - | jq -r '.LSHandlers[] | select(.LSHandlerURLScheme == "https").LSHandlerRoleAll')"
+
+# Secondary browser selection
+[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
+
+# Primary browser selection
+[[ -z "${browser}" ]] &amp;&amp; open -b "${default_browser}" "${1}" || open -b "${browser}" "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FA10732A-C227-4034-91A7-BC0EE23B8CAB</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -377,31 +436,12 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Secondary browser selection
-[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
-
-# Primary browser selection
-[[ -z "${browser}" ]] &amp;&amp; open "${1}" || open -b "${browser}" "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>7C6B748D-6523-42EE-898A-B884F3E96C68</string>
+			<string>B378BB26-859C-44DF-90ED-4D733F5269F2</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -492,41 +532,12 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Get Selected Orion Profile
-orion_path="${HOME}/Library/Application Support/Orion"
-profile_id="$(plutil -convert json "${orion_path}/profiles" -o - | jq -r --arg useSelectProfile "${useSelectProfile}" '(.profiles[] | select(.name == $useSelectProfile).identifier) // .defaultProfile // "Defaults"')"
-webarchive_file="${orion_path}/${profile_id}/ReadingListArchives/${id}/Page.webarchive"
-
-# Offline article detection
-[[ -f "${webarchive_file}" ]] &amp;&amp; 1="file://${webarchive_file}"
-# Specify default browser for downloaded Reading List files
-file_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist" -o - | jq -r '.LSHandlers[] | select(.LSHandlerURLScheme == "https").LSHandlerRoleAll')"
-
-# Secondary browser selection
-[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
-
-# Primary browser selection
-[[ -z "${browser}" ]] &amp;&amp; open -b "${file_browser}" "${1}" || open -b "${browser}" "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>511BB493-0F7A-4668-9A13-2A3974FAFFCC</string>
+			<string>EA2C746D-114A-466A-886C-DF05F41E3E93</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -678,6 +689,15 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
+		<key>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
 		<key>1FB2E22F-B861-47C6-8DD1-B93F06E7F8FB</key>
 		<dict>
 			<key>colorindex</key>
@@ -686,17 +706,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<real>355</real>
 			<key>ypos</key>
 			<real>410</real>
-		</dict>
-		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>Open URL</string>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>30</real>
 		</dict>
 		<key>462F7DCB-5C03-4FD3-9B17-676BEB441EEF</key>
 		<dict>
@@ -715,17 +724,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<real>30</real>
 			<key>ypos</key>
 			<real>180</real>
-		</dict>
-		<key>511BB493-0F7A-4668-9A13-2A3974FAFFCC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Open URL</string>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>330</real>
 		</dict>
 		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
 		<dict>
@@ -747,17 +745,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<key>ypos</key>
 			<real>550</real>
 		</dict>
-		<key>7C6B748D-6523-42EE-898A-B884F3E96C68</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>Open URL</string>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>180</real>
-		</dict>
 		<key>932CED4A-1AD7-4F42-B96E-DFCD68A84B60</key>
 		<dict>
 			<key>colorindex</key>
@@ -769,6 +756,15 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<key>ypos</key>
 			<real>330</real>
 		</dict>
+		<key>B378BB26-859C-44DF-90ED-4D733F5269F2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
 		<key>D0EB740F-5590-4BEA-AD30-5FC6944D1D8F</key>
 		<dict>
 			<key>colorindex</key>
@@ -779,6 +775,24 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<real>180</real>
 			<key>ypos</key>
 			<real>30</real>
+		</dict>
+		<key>EA2C746D-114A-466A-886C-DF05F41E3E93</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>FA10732A-C227-4034-91A7-BC0EE23B8CAB</key>
+		<dict>
+			<key>note</key>
+			<string>Open URL</string>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 		<key>FCE86F39-10F4-4CA8-A543-F4EB4AB21897</key>
 		<dict>
@@ -1061,6 +1075,8 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<string>browser2</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2026.3</string>
 	<key>webaddress</key>

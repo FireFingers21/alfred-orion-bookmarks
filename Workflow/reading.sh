@@ -13,6 +13,7 @@ jq -cs \
    --arg useQL "$useQL" \
 '{
     "skipknowledge": true,
+    "variables": { "searchType": "reading" },
     "items": (if (.[] | length > 0) then map(.[] |
         {
             "title": .title,
