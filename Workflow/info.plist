@@ -1076,7 +1076,7 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2026.3.1</string>
+	<string>2026.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-orion-bookmarks</string>
 </dict>
