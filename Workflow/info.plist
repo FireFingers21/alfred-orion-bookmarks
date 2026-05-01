@@ -219,6 +219,14 @@
 	<key>objects</key>
 	<array>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -268,14 +276,6 @@
 			<string>D0EB740F-5590-4BEA-AD30-5FC6944D1D8F</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>1CC004D3-DC42-426C-9FA0-4A2CCC1424B4</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -407,6 +407,14 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 			<integer>3</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>B378BB26-859C-44DF-90ED-4D733F5269F2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>action</key>
@@ -434,14 +442,6 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 			<string>46F25C58-1D4A-40A1-993F-A5A422D83A05</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>B378BB26-859C-44DF-90ED-4D733F5269F2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -1075,8 +1075,6 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 			<string>browser2</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2026.3.1</string>
 	<key>webaddress</key>

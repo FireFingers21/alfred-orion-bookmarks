@@ -24,12 +24,13 @@ sqlite3 -json ${history_file} ${sqlQuery} | jq -cs \
 --arg useQL "$useQL" \
 '{
     "items": (if (length > 0) then map(sort_by(.LAST_VISIT_TIME) | reverse | .[] |
+        (.LAST_VISIT_TIME | strptime("%Y-%m-%d %H:%M:%S") | mktime) as $LAST_VISIT_DATETIME |
     	{
     		"title": (if (.TITLE == "") then .HOST else .TITLE end),
-    		"subtitle": "[\(.LAST_VISIT_TIME | strptime("%Y-%m-%d %H:%M:%S") | strflocaltime("%Y-%m-%d"))] \(.URL)",
+    		"subtitle": "[\($LAST_VISIT_DATETIME | strflocaltime("%Y-%m-%d"))] \(.URL)",
     		"arg": .URL,
     		"quicklookurl": "\(if $useQL == "1" then .URL else "" end)",
-            "text": { "largetype": "[\(.LAST_VISIT_TIME | strptime("%Y-%m-%d %H:%M:%S") | strflocaltime("%Y-%m-%d, %I:%M %p"))]\n\n\(.URL)" },
+            "text": { "largetype": "[\($LAST_VISIT_DATETIME | strflocaltime("%Y-%m-%d, %I:%M %p"))]\n\n\(.URL)" },
             "icon": { "path": "images/history.png" },
     		"mods": {
     			"cmd": {
