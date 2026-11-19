@@ -10,10 +10,10 @@ plutil -convert xml1 "${bookmarks_file}" -o - |
 sed 's/date\(\>\)/string\1/g' |
 plutil -convert json -o - - |
 jq -cs \
-   --arg useKeyword "$useKeyword" \
-   --arg useFolder "$useFolder" \
-   --arg useURL "$useURL" \
-   --arg useQL "$useQL" \
+   --arg useKeyword "${useKeyword}" \
+   --arg useFolder "${useFolder}" \
+   --arg useURL "${useURL}" \
+   --arg useQL "${useQL}" \
 '(map(.[] | select(.type == "folder" and .id != "0"))) as $folders |
 {
     "items": map(.[] | select(.unmodifiable != "managed" and .type != "folder") |

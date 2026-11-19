@@ -10,7 +10,7 @@ plutil -convert xml1 "${reading_list_file}" -o - |
 sed 's/date\(\>\)/string\1/g' |
 plutil -convert json -o - - |
 jq -cs \
-   --arg useQL "$useQL" \
+   --arg useQL "${useQL}" \
 '{
     "skipknowledge": true,
     "variables": { "searchType": "reading" },

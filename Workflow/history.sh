@@ -7,6 +7,7 @@ history_file="file://${orion_path}/${profile_id}/history"
 
 # SQL Query
 query="${1}"
+query="${query//\\/\\\\}"
 query="${query//\%/\\%}"
 query="${query//_/\_}"
 query="${query//'/''}"
@@ -20,10 +21,10 @@ ORDER BY LAST_VISIT_TIME DESC
 LIMIT 500;"
 
 # Load History
-sqlite3 -json ${history_file} ${sqlQuery} | jq -cs \
---arg useQL "$useQL" \
+sqlite3 -json "${history_file}" "${sqlQuery}" | jq -cs \
+--arg useQL "${useQL}" \
 '{
-    "items": (if (length > 0) then map(sort_by(.LAST_VISIT_TIME) | reverse | .[] |
+    "items": (if (length > 0) then map(.[] |
         (.LAST_VISIT_TIME | strptime("%Y-%m-%d %H:%M:%S") | mktime) as $LAST_VISIT_DATETIME |
     	{
     		"title": (if (.TITLE == "") then .HOST else .TITLE end),
