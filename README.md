@@ -2,10 +2,6 @@
 
 Search Orion bookmarks, history, & reading list in Alfred
 
-## Setup
-
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
-
 ## Usage
 
 Search for your [Orion](https://orionbrowser.com) bookmarks via the `bm` keyword. Type to refine your search.
@@ -38,4 +34,5 @@ Append `::` to the configured [Keywords](https://www.alfredapp.com/help/workflow
 
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
-Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This folder is case sensitive.
+> [!TIP]
+> Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This folder is case sensitive.

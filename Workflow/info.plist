@@ -621,11 +621,7 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Setup
-
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
-
-## Usage
+	<string>## Usage
 
 Search for your [Orion](https://orionbrowser.com) bookmarks via the `bm` keyword. Type to refine your search.
 
@@ -657,7 +653,8 @@ Append `::` to the configured [Keywords](https://www.alfredapp.com/help/workflow
 
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
-Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This folder is case sensitive.</string>
+&gt; [!TIP]
+&gt; Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This folder is case sensitive.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1548B684-9B57-4C83-889B-7AB17368732A</key>
@@ -1012,7 +1009,7 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Primary browser for opening links.</string>
+			<string></string>
 			<key>label</key>
 			<string>Default Browsers</string>
 			<key>type</key>
@@ -1066,7 +1063,7 @@ Bookmarks in a folder named `Exclude-Alfred` will be hidden from search. This fo
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Secondary browser for opening links.</string>
+			<string>Primary &amp; secondary browsers for opening links.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
